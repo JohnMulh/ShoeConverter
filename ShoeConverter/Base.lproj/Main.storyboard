@@ -54,13 +54,51 @@
                                     <rect key="frame" x="16" y="125" width="277" height="21"/>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Womens' shoe conversion" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coj-lG-h76">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="193" width="283" height="21"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter US shoe size here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fsz-R0-7Ug">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="229" width="322" height="30"/>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4I-jb-pjy">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Convert">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="260" y="172" width="55" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="convertWomensShoeSizeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lb0-74-A77"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Converted Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXd-qg-u9V">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="23" y="275" width="315" height="41"/>
+                                </variation>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use whole numbers only" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vh9-8v-Spk">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="154" width="203" height="21"/>
+                                    <rect key="frame" x="23" y="338" width="203" height="21"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -71,6 +109,10 @@
                                 <exclude reference="AXD-xe-lE8"/>
                                 <exclude reference="OfS-7e-e6R"/>
                                 <exclude reference="fNp-AU-uTi"/>
+                                <exclude reference="coj-lG-h76"/>
+                                <exclude reference="fsz-R0-7Ug"/>
+                                <exclude reference="b4I-jb-pjy"/>
+                                <exclude reference="jXd-qg-u9V"/>
                                 <exclude reference="Vh9-8v-Spk"/>
                             </mask>
                         </variation>
@@ -80,6 +122,10 @@
                                 <include reference="AXD-xe-lE8"/>
                                 <include reference="OfS-7e-e6R"/>
                                 <include reference="fNp-AU-uTi"/>
+                                <include reference="coj-lG-h76"/>
+                                <include reference="fsz-R0-7Ug"/>
+                                <include reference="b4I-jb-pjy"/>
+                                <include reference="jXd-qg-u9V"/>
                                 <include reference="Vh9-8v-Spk"/>
                             </mask>
                         </variation>
@@ -87,6 +133,8 @@
                     <connections>
                         <outlet property="mensConvertedShoeSizeLabel" destination="fNp-AU-uTi" id="GHX-Ut-2Q7"/>
                         <outlet property="mensShoeSizeTextField" destination="OfS-7e-e6R" id="lYI-mf-FAi"/>
+                        <outlet property="womensConvertedShoeSizeLabel" destination="jXd-qg-u9V" id="U1d-82-HsZ"/>
+                        <outlet property="womensShoeSizeTextField" destination="fsz-R0-7Ug" id="hAr-1K-pzm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
